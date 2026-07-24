@@ -1,0 +1,121 @@
+.btn-primary{
+    padding: 1.6rem 2.4rem;
+    background-color: var(--pink-10);
+    color: var(--gray-900);
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.48px;
+    transition: background-color .3s ease;
+}
+
+.btn-primary.white{
+    background-color: #fff;
+}
+
+.btn-primary.white:hover{
+    background-color: var(--gray-900);
+    color: #fff;
+}
+
+.btn-primary.lg{
+    font-size: 1.8rem;
+    padding: 2.3rem 2.4rem;
+}
+
+.btn-primary:hover{
+    background-color: var(--pink-20);
+}
+
+.item-digital{
+    width: 100%;
+}
+
+.item-digital .icon{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+}
+
+.item-digital .info h6{
+    margin-bottom: .8rem;
+}
+
+.item-digital .info p {
+    /* Nesse caso não podemos aplicar um max-width porque os tamanhos dos paragráfos não são iguais
+    então iremos definir somente a cor */
+    color: var(--gray-600);
+}
+
+.card-post{
+    border: .2rem solid rgba(225, 255, 255, 0.08);
+    background-color: rgba(225, 255, 255, 0.02);
+    /* Criamos um "suspiro" dentro do card para que o conteúdo não fique colado na borda */
+    padding: 2.4rem;
+}
+
+.card-post .tag{
+    display: inline-block;
+    margin-bottom: 4.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: .8rem 2.2rem;
+    border-radius: 100rem;
+    text-transform: uppercase;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 9%;
+}
+
+.card-post .img{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 6.4rem;
+    width: 13.259rem;
+}
+
+.card-post .text{
+    width: 100%;
+    max-width: 48.2rem;
+}
+
+.card-post .text{
+    margin-bottom: .8rem;
+}
+
+.card-post .text p{
+    font-size: 1.6rem;
+    color: var(--gray-600);
+}
+
+@media(max-width: 991px){
+    .s-digital ul{
+        text-align: center;
+    }
+
+    .s-digital .icon{
+        margin: 0 auto;
+        margin-bottom: 1.6rem;
+    }
+
+    .s-digital ul li br{
+        display: none;
+    }
+}
+
+@media(max-width: 560px){
+    .s-digital .info p{
+        max-width: 31.9rem;
+        margin: 0 auto;
+    }
+
+    .card-post .text h6{
+        font-size: 1.8rem;
+    }
+
+    .card-post .text p{
+        font-size: 1.4rem;
+    }
+}

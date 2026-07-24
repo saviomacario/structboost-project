@@ -1,0 +1,7 @@
+/* Se adicionarmos o padding, precisamos simplesmente adicionar 30px no max-width */
+.container{
+    width: 100%;
+    max-width: 124.6rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}

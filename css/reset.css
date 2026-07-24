@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Tira um serrilhado imperceptivel nas fonts */
+    -webkit-font-smoothing: antialiased;
+    font-family: "Inter", sans-serif;
+}
+
+/* Tive que tirar o reset do img porque estava sobrescrevendo o  */
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: var(--gray-900);
+    color: var(--gray-100);
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

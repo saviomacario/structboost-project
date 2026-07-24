@@ -1,0 +1,499 @@
+header{
+    display: flex;
+    height: 8.8rem;
+    align-items: center;
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.026);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-mobile{
+    display: none;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+header nav ul{
+    display: flex;
+    gap: 4rem;
+}
+
+header nav ul li a{
+    font-size: 1.6rem;
+    color: var(--gray-100);
+    letter-spacing: -0.48px;
+    transition: opacity .3s ease;
+}
+
+header nav ul li a:hover{
+    opacity: .8;
+}
+
+/* Atribuimos um tamanho fixo porque vamos trabalhar com position absolute em alguns elementos */
+.s-hero{
+    position: relative;
+    width: 100%;
+    padding-top: 11.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.s-hero .ilustra-mobile{
+    display: none;
+}
+
+.s-hero::after{
+    content: '';
+    width: 100%;
+    height: 22rem;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    background-color: var(--pink-10);
+}
+
+.s-hero .text{
+    width: 100%;
+    max-width: 71.9rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 6.4rem;
+
+    position: relative;
+}
+
+.s-hero .text h1{
+    font-weight: 600;
+    line-height: 120%;
+    position: relative;
+}
+
+.s-hero .text h1::before{
+    content: '';
+    max-width: 59.9rem;
+    height: 2.2rem;
+    background: url(../img/line-title.svg) no-repeat left center;
+    position: absolute;
+    bottom: -.5rem;
+    left: 3.9rem;
+    z-index: -1;
+    animation: move 1s .4s ease-in forwards;
+}
+
+@keyframes move{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+.s-hero .text p{
+    max-width: 55.6rem;
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+    margin-top: 2.4rem;
+    color: var(--gray-600);
+}
+
+.s-hero .text .arrow{
+    position: absolute;
+    bottom: 1.718rem;
+    left: 5.5rem;
+    width: 11.7rem;
+    height: 7.882rem;
+    animation: swing 3.2s ease-in-out infinite;
+}
+
+@keyframes swing{
+    0%{
+        left: 5.5rem;
+    }
+
+    50%{
+        left: 8.5rem;
+    }
+
+    100%{
+        left: 5.5rem;
+    }
+}
+
+.s-hero .ilustra{
+    padding: 0 1.5rem;
+}
+
+.s-digital{
+    padding-top: 12.8rem;
+}
+
+.s-digital h3{
+    text-align: center;
+    max-width: 53.5rem;
+    margin: 0 auto;
+}
+
+.s-digital ul{
+    padding-top: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .1rem solid var(--gray-800);
+    padding-bottom: 12.8rem;
+}
+
+.s-digital ul li{
+    width: 100% ;
+    max-width: 38.4rem;
+}
+
+.s-art-front{
+    padding-top: 12.8rem;
+    padding-bottom: 12.8rem;
+}
+
+.s-art-front p{
+    color: var(--gray-600);
+}
+
+.s-art-front .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6.4rem;
+}
+
+.s-art-front .title .left h3{
+    padding-bottom: 1.6rem;
+}
+
+.s-art-front .title p{
+    max-width: 42.9rem;
+}
+
+.s-art-front .all{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+}
+
+.s-art-front .all .card-post:first-child{
+    grid-column: span 2;
+}
+
+.s-newsletter{
+    width: 100%;
+    padding-top: 11.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pink-10);
+}
+
+.s-newsletter .text{
+    width: 100%;
+    max-width: 71.9rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 8.9rem;
+
+}
+
+.s-newsletter .text h1{
+    font-weight: 600;
+    line-height: 120%;
+    position: relative;
+}
+
+.s-newsletter .text p{
+    max-width: 55.6rem;
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+    margin-top: 2.4rem;
+    color: var(--gray-100);
+}
+
+footer{
+    padding: 4.8rem 0;
+}
+
+.main-area{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: .1rem solid var(--gray-800);
+    padding-bottom: 6.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.main-area .left {
+    max-width: 27.9rem;
+}
+
+.main-area .left .logo{
+    width: 20.8rem;
+    padding-bottom: 2.4rem;
+}
+
+.main-area .left p{
+    font-size: 1.6rem;
+    color: var(--gray-600);
+}
+
+footer .main-area .right{
+    flex-grow: 1;
+    max-width: 79.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-area .right h6{
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+
+.main-area .right ul li:not(:last-child){
+    margin-bottom: 3.2rem;
+}
+
+.main-area .right a{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.main-area .right ul li a{
+    color: var(--gray-600);
+    font-size: 1.6rem;
+    transition: color .3s ease;
+}
+
+.main-area .right ul li a:hover{
+    color: var(--gray-100);
+}
+
+.main-area .right a img{
+    width: 2.4rem;
+}
+
+footer p{
+    color: var(--gray-600);
+    font-size: 1.6rem;
+    letter-spacing: -3%;
+}
+
+@media(max-width: 1200px){
+
+    .s-digital{
+        padding-top: 6.8rem;
+    }
+
+    .s-digital ul{
+        gap: 3.6rem;
+        padding-bottom: 6.8rem;
+    }
+
+    .s-digital h6{
+        font-size: 2rem;
+    }
+
+    .s-digital p{
+        font-size: 1.6rem;
+    }
+
+    .s-art-front {
+        padding-top: 8.8rem;
+        padding-bottom: 8.8rem;
+    }
+
+    .s-art-front .title{
+        flex-direction: column;
+        text-align: center;
+        gap: 1.2rem;
+        width: 100%;
+    }
+
+    .s-art-front .title p{
+        max-width: 100%;
+    }
+
+    .s-art-front .all .card-post:first-child, .s-art-front .all .card-post:nth-child(2) {
+        grid-column: span 3;
+    }
+
+    footer .main-area .right{
+        max-width: 65.2rem;
+    }
+}
+
+@media(max-width: 991px){
+    .s-hero::after{
+        height: 13rem;
+    }
+
+    .s-digital ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s-art-front .all .card-post{
+        grid-column: span 3;
+    }
+
+    footer .main-area{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    footer .main-area .logo{
+        margin: 0 auto;
+    }
+
+    footer .main-area .left{
+        width: 100%;
+        max-width: 100%; 
+    }
+
+    footer .main-area .right{
+        width: 100%;
+        max-width: 100%; 
+    }
+    
+    footer .main-area .left{
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 768px){
+    header{
+        height: 7.2rem;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .btn-mobile{
+        display: block;
+    }
+
+    .s-hero{
+        padding-top: 8.8rem;
+    }
+
+    .s-hero .text h1{
+        max-width: 49rem;
+        margin: 0 auto;
+    }
+
+    .s-hero .text h1::before {
+        bottom: -.4rem;
+        background-size: 100%;
+        left: 0;
+        max-width: 54.9rem;
+    }
+
+    .s-hero .text p{
+        max-width: 41.6rem;
+    }
+
+    .s-hero .text .arrow {
+        bottom: 0.718rem;
+        left: 8.5rem;
+        width: 9.7rem;
+    }
+}
+
+@media(max-width: 560px){
+    header .logo{
+        width: 16rem;
+    }
+
+    .s-hero .ilustra{
+        display: none;
+    }
+
+    .s-hero .ilustra-mobile{
+        display: block;
+    }
+
+    .s-digital {
+        padding-top: 8rem;
+    }
+
+    .s-digital ul {
+        gap: 6.4rem;
+        padding-bottom: 8rem;
+    }
+
+    .s-digital h3{
+        max-width: 33.6rem;
+        font-size: 2.8rem;
+        letter-spacing: -3%;
+    }
+
+    .s-digital h6{
+        font-size: 2.2rem;
+    }
+
+    .s-digital p{
+        font-size: 1.8rem;
+    }
+
+    .s-art-front .title .left h3{
+        font-size: 2.8rem;
+    }
+
+    .s-art-front .title .left p{
+        font-size: 1.6rem;
+    }
+
+    .s-art-front .title .right{
+        display: none;
+    }
+    .s-newsletter h2 {
+        font-size: 3.9rem;
+    }
+
+    footer .main-area .right{
+        flex-direction: column;
+        align-items: center;
+        gap: 4.8rem;
+    }
+
+    footer p{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-area .right h6{
+        text-align: center;
+    }
+
+    footer .main-area .right ul li a{
+        justify-content: center;
+    }
+
+    footer .main-area .right .item-nav:last-child{
+        width: 100%;
+    }
+
+    footer .main-area .right .item-nav:last-child ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
